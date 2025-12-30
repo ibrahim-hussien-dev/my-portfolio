@@ -539,6 +539,7 @@
     }
   </style>
   <style>@view-transition { navigation: auto; }</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full dark-mode" dir="ltr"><!-- Particle Background -->
@@ -572,7 +573,7 @@
       <svg viewbox="0 0 24 24" width="20" height="20" fill="currentColor" style="flex-shrink: 0;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
       </svg><span data-en="Based in Egypt | Open to Remote &amp; Relocation" data-ar="مقيم في مصر | متاح للعمل عن بُعد والانتقال">Based in Egypt | Open to Remote &amp; Relocation</span></p>
      <p id="hero-description" class="text-xl mb-8 max-w-2xl mx-auto" style="color: var(--text-secondary);">Building scalable web applications with MongoDB, Express, React, and Node.js</p>
-     <div class="flex gap-4 justify-center flex-wrap"><a href="#projects" class="btn-primary px-8 py-3 font-semibold rounded-lg"> <span data-en="View Projects" data-ar="عرض المشاريع">View Projects</span> </a> <a href="./assets/Ibrahim_Hussien_CV.pdf" download id="downloadCV" class="btn-outline px-8 py-3 font-semibold rounded-lg flex items-center gap-2"> <span>📄</span> <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span> </a> <a href="#contact" class="btn-outline px-8 py-3 font-semibold rounded-lg"> <span data-en="Contact Me" data-ar="اتصل بي">Contact Me</span> </a>
+     <div class="flex gap-4 justify-center flex-wrap"><a href="#projects" class="btn-primary px-8 py-3 font-semibold rounded-lg"> <span data-en="View Projects" data-ar="عرض المشاريع">View Projects</span> </a> <a href="assets/Ibrahim_Hussien_CV.pdf" download id="downloadCV" class="btn-outline px-8 py-3 font-semibold rounded-lg flex items-center gap-2"> <span>📄</span> <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span> </a> <a href="#contact" class="btn-outline px-8 py-3 font-semibold rounded-lg"> <span data-en="Contact Me" data-ar="اتصل بي">Contact Me</span> </a>
      </div>
     </div>
    </section><!-- About Section -->
@@ -1123,6 +1124,8 @@
       });
       
       // Download CV as PDF
+     html2pdf().set(opt).from(cvContainer).save();
+
 /*      document.getElementById('downloadCV').addEventListener('click', async (e) => {
         e.preventDefault();
         
