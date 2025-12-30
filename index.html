@@ -1124,111 +1124,111 @@
       
       // Download CV as PDF
 
-    //   document.getElementById('downloadCV').addEventListener('click', async (e) => {
-    //     e.preventDefault();
+      document.getElementById('downloadCV').addEventListener('click', async (e) => {
+        // e.preventDefault();
         
-    //     // Create a temporary container for the CV content
-    //     const cvContainer = document.createElement('div');
-    //     cvContainer.style.position = 'absolute';
-    //     cvContainer.style.left = '-9999px';
-    //     cvContainer.style.width = '210mm'; // A4 width
-    //     cvContainer.style.padding = '20mm';
-    //     cvContainer.style.fontFamily = 'Arial, sans-serif';
-    //     cvContainer.style.fontSize = '12pt';
-    //     cvContainer.style.lineHeight = '1.6';
-    //     cvContainer.style.color = '#000';
-    //     cvContainer.style.background = '#fff';
+        // Create a temporary container for the CV content
+        const cvContainer = document.createElement('div');
+        cvContainer.style.position = 'absolute';
+        cvContainer.style.left = '-9999px';
+        cvContainer.style.width = '210mm'; // A4 width
+        cvContainer.style.padding = '20mm';
+        cvContainer.style.fontFamily = 'Arial, sans-serif';
+        cvContainer.style.fontSize = '12pt';
+        cvContainer.style.lineHeight = '1.6';
+        cvContainer.style.color = '#000';
+        cvContainer.style.background = '#fff';
         
-    //     cvContainer.innerHTML = `
-    //       <div style="text-align: center; margin-bottom: 30px;">
-    //         <h1 style="font-size: 32pt; margin: 0; color: #22d3ee;">IBRAHIM HUSSIEN</h1>
-    //         <h2 style="font-size: 18pt; margin: 10px 0; color: #475569;">Full Stack MERN Developer</h2>
-    //         <p style="font-size: 11pt; color: #64748b;">📍 Egypt | Open to Remote & Relocation</p>
-    //       </div>
+        cvContainer.innerHTML = `
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="font-size: 32pt; margin: 0; color: #22d3ee;">IBRAHIM HUSSIEN</h1>
+            <h2 style="font-size: 18pt; margin: 10px 0; color: #475569;">Full Stack MERN Developer</h2>
+            <p style="font-size: 11pt; color: #64748b;">📍 Egypt | Open to Remote & Relocation</p>
+          </div>
           
-    //       <div style="margin-bottom: 25px;">
-    //         <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">CONTACT INFORMATION</h3>
-    //         <p style="margin: 5px 0;">📧 Email: ibrahimhussien754@gmail.com</p>
-    //         <p style="margin: 5px 0;">💼 LinkedIn: https://www.linkedin.com/in/ibrahim-hussien-dev/</p>
-    //         <p style="margin: 5px 0;">💻 GitHub: https://github.com/ibrahim-hussien-dev</p>
-    //         <p style="margin: 5px 0;">💬 WhatsApp: +20 100 754 7543</p>
-    //       </div>
+          <div style="margin-bottom: 25px;">
+            <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">CONTACT INFORMATION</h3>
+            <p style="margin: 5px 0;">📧 Email: ibrahimhussien754@gmail.com</p>
+            <p style="margin: 5px 0;">💼 LinkedIn: https://www.linkedin.com/in/ibrahim-hussien-dev/</p>
+            <p style="margin: 5px 0;">💻 GitHub: https://github.com/ibrahim-hussien-dev</p>
+            <p style="margin: 5px 0;">💬 WhatsApp: +20 100 754 7543</p>
+          </div>
           
-    //       <div style="margin-bottom: 25px;">
-    //         <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">ABOUT ME</h3>
-    //         <p style="text-align: justify;">I'm a passionate full-stack developer specializing in the MERN stack. With a strong foundation in JavaScript and modern web technologies, I create responsive, user-friendly applications that solve real-world problems. I focus on writing clean code, understanding business needs, and delivering projects on time with strong communication and teamwork.</p>
-    //       </div>
+          <div style="margin-bottom: 25px;">
+            <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">ABOUT ME</h3>
+            <p style="text-align: justify;">I'm a passionate full-stack developer specializing in the MERN stack. With a strong foundation in JavaScript and modern web technologies, I create responsive, user-friendly applications that solve real-world problems. I focus on writing clean code, understanding business needs, and delivering projects on time with strong communication and teamwork.</p>
+          </div>
           
-    //       <div style="margin-bottom: 25px;">
-    //         <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">TECHNICAL SKILLS</h3>
-    //         <div style="margin-left: 20px;">
-    //           <p style="margin: 5px 0;"><strong>Core Stack:</strong> MongoDB, Express.js, React, Node.js</p>
-    //           <p style="margin: 5px 0;"><strong>Frontend:</strong> JavaScript, HTML5, CSS3, Tailwind CSS, Bootstrap, jQuery, Angular</p>
-    //           <p style="margin: 5px 0;"><strong>Backend:</strong> REST APIs, GraphQL, JWT, OAuth Authentication</p>
-    //           <p style="margin: 5px 0;"><strong>State Management:</strong> Redux, Context API</p>
-    //           <p style="margin: 5px 0;"><strong>Tools & Platforms:</strong> Git, GitHub, Postman, AWS, Vercel, Netlify</p>
-    //           <p style="margin: 5px 0;"><strong>Methodology:</strong> Agile/Scrum</p>
-    //         </div>
-    //       </div>
+          <div style="margin-bottom: 25px;">
+            <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">TECHNICAL SKILLS</h3>
+            <div style="margin-left: 20px;">
+              <p style="margin: 5px 0;"><strong>Core Stack:</strong> MongoDB, Express.js, React, Node.js</p>
+              <p style="margin: 5px 0;"><strong>Frontend:</strong> JavaScript, HTML5, CSS3, Tailwind CSS, Bootstrap, jQuery, Angular</p>
+              <p style="margin: 5px 0;"><strong>Backend:</strong> REST APIs, GraphQL, JWT, OAuth Authentication</p>
+              <p style="margin: 5px 0;"><strong>State Management:</strong> Redux, Context API</p>
+              <p style="margin: 5px 0;"><strong>Tools & Platforms:</strong> Git, GitHub, Postman, AWS, Vercel, Netlify</p>
+              <p style="margin: 5px 0;"><strong>Methodology:</strong> Agile/Scrum</p>
+            </div>
+          </div>
           
-    //       <div style="margin-bottom: 25px;">
-    //         <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">PROFESSIONAL SKILLS</h3>
-    //         <div style="margin-left: 20px;">
-    //           <p style="margin: 5px 0;">• Problem Solving & Critical Thinking</p>
-    //           <p style="margin: 5px 0;">• Team Collaboration & Leadership</p>
-    //           <p style="margin: 5px 0;">• Effective Communication</p>
-    //           <p style="margin: 5px 0;">• Time Management & Organization</p>
-    //           <p style="margin: 5px 0;">• Attention to Detail & Code Quality</p>
-    //         </div>
-    //       </div>
+          <div style="margin-bottom: 25px;">
+            <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">PROFESSIONAL SKILLS</h3>
+            <div style="margin-left: 20px;">
+              <p style="margin: 5px 0;">• Problem Solving & Critical Thinking</p>
+              <p style="margin: 5px 0;">• Team Collaboration & Leadership</p>
+              <p style="margin: 5px 0;">• Effective Communication</p>
+              <p style="margin: 5px 0;">• Time Management & Organization</p>
+              <p style="margin: 5px 0;">• Attention to Detail & Code Quality</p>
+            </div>
+          </div>
           
-    //       <div style="margin-bottom: 25px;">
-    //         <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">FEATURED PROJECTS</h3>
-    //         <div style="margin-left: 20px;">
-    //           <div style="margin-bottom: 15px;">
-    //             <p style="margin: 5px 0;"><strong>E-Commerce Platform</strong></p>
-    //             <p style="margin: 5px 0; font-size: 10pt; color: #64748b;">Full-stack e-commerce solution with user authentication, product management, shopping cart, and Stripe payment integration.</p>
-    //             <p style="margin: 5px 0; font-size: 10pt;"><em>Tech: React, Node.js, MongoDB, Stripe</em></p>
-    //           </div>
-    //           <div style="margin-bottom: 15px;">
-    //             <p style="margin: 5px 0;"><strong>Real-Time Chat Application</strong></p>
-    //             <p style="margin: 5px 0; font-size: 10pt; color: #64748b;">WebSocket-based chat with real-time messaging, user presence, typing indicators, and message history.</p>
-    //             <p style="margin: 5px 0; font-size: 10pt;"><em>Tech: React, Socket.io, Express, MongoDB</em></p>
-    //           </div>
-    //           <div style="margin-bottom: 15px;">
-    //             <p style="margin: 5px 0;"><strong>Task Management System</strong></p>
-    //             <p style="margin: 5px 0; font-size: 10pt; color: #64748b;">Collaborative task manager with drag-and-drop boards, team collaboration, and progress tracking.</p>
-    //             <p style="margin: 5px 0; font-size: 10pt;"><em>Tech: React, Redux, Node.js, MongoDB</em></p>
-    //           </div>
-    //         </div>
-    //       </div>
+          <div style="margin-bottom: 25px;">
+            <h3 style="font-size: 14pt; color: #22d3ee; border-bottom: 2px solid #22d3ee; padding-bottom: 5px;">FEATURED PROJECTS</h3>
+            <div style="margin-left: 20px;">
+              <div style="margin-bottom: 15px;">
+                <p style="margin: 5px 0;"><strong>E-Commerce Platform</strong></p>
+                <p style="margin: 5px 0; font-size: 10pt; color: #64748b;">Full-stack e-commerce solution with user authentication, product management, shopping cart, and Stripe payment integration.</p>
+                <p style="margin: 5px 0; font-size: 10pt;"><em>Tech: React, Node.js, MongoDB, Stripe</em></p>
+              </div>
+              <div style="margin-bottom: 15px;">
+                <p style="margin: 5px 0;"><strong>Real-Time Chat Application</strong></p>
+                <p style="margin: 5px 0; font-size: 10pt; color: #64748b;">WebSocket-based chat with real-time messaging, user presence, typing indicators, and message history.</p>
+                <p style="margin: 5px 0; font-size: 10pt;"><em>Tech: React, Socket.io, Express, MongoDB</em></p>
+              </div>
+              <div style="margin-bottom: 15px;">
+                <p style="margin: 5px 0;"><strong>Task Management System</strong></p>
+                <p style="margin: 5px 0; font-size: 10pt; color: #64748b;">Collaborative task manager with drag-and-drop boards, team collaboration, and progress tracking.</p>
+                <p style="margin: 5px 0; font-size: 10pt;"><em>Tech: React, Redux, Node.js, MongoDB</em></p>
+              </div>
+            </div>
+          </div>
           
-    //       <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-size: 10pt; color: #94a3b8;">
-    //         <p>Available for full-time positions, freelance projects, and remote opportunities</p>
-    //       </div>
-    //     `;
+          <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-size: 10pt; color: #94a3b8;">
+            <p>Available for full-time positions, freelance projects, and remote opportunities</p>
+          </div>
+        `;
         
-    //     document.body.appendChild(cvContainer);
+        document.body.appendChild(cvContainer);
         
-    //     // Use html2pdf library
-    //     const script = document.createElement('script');
-    //     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
-    //     script.onload = () => {
-    //       const opt = {
-    //         margin: 0,
-    //         filename: 'Ibrahim_Hussien_CV.pdf',
-    //         image: { type: 'jpeg', quality: 0.98 },
-    //         html2canvas: { scale: 2, useCORS: true },
-    //         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    //       };
+        // Use html2pdf library
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+        script.onload = () => {
+          const opt = {
+            margin: 0,
+            filename: 'Ibrahim_Hussien_CV.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          };
           
-    //       html2pdf().set(opt).from(cvContainer).save().then(() => {
-    //         document.body.removeChild(cvContainer);
-    //       });
-    //     };
-    //     document.head.appendChild(script);
-    //   });
-    // }
+          html2pdf().set(opt).from(cvContainer).save().then(() => {
+            document.body.removeChild(cvContainer);
+          });
+        };
+        document.head.appendChild(script);
+      });
+    }
 
     // Toggle Theme
     function toggleTheme() {
